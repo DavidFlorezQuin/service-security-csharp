@@ -38,6 +38,7 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.G
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.AssemblyInfoInputs.cache
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.AssemblyInfo.cs
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.sourcelink.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.csproj.Up2Date
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\Data.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Data\obj\Debug\net7.0\refint\Data.dll

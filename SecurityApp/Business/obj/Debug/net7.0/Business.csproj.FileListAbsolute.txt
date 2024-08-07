@@ -44,6 +44,7 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Bu
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.AssemblyInfoInputs.cache
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.AssemblyInfo.cs
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.sourcelink.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.csproj.Up2Date
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\Business.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Business\obj\Debug\net7.0\refint\Business.dll

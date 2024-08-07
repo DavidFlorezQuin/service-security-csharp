@@ -86,13 +86,16 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Web.pdb
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Dapper.dll
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Humanizer.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -104,9 +107,11 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microso
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
@@ -140,6 +145,7 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.Ass
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.csproj.CoreCompileInputs.cache
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.sourcelink.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -154,8 +160,3 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\refint\
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.pdb
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\Web.genruntimeconfig.cache
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\obj\Debug\net7.0\ref\Web.dll
-C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Humanizer.dll
-C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Web\bin\Debug\net7.0\System.CodeDom.dll

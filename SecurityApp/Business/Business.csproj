@@ -11,4 +11,9 @@
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Operational\Implementation\" />
+    <Folder Include="Operational\Interface\" />
+  </ItemGroup>
+
 </Project>

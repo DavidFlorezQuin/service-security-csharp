@@ -1,7 +1,7 @@
-using Business.Implementation;
-using Business.Interfaces;
-using Data.Implementation;
-using Data.Interface;
+using Business.Security.Implementation;
+using Business.Security.Interfaces;
+using Data.Security.Implementation;
+using Data.Security.Interfaces;
 using Entity.Context;
 using Microsoft.EntityFrameworkCore;
 

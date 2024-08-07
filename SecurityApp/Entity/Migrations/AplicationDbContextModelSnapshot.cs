@@ -61,7 +61,7 @@ namespace Entity.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("modules");
+                    b.ToTable("Modulo");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.Person", b =>
@@ -130,7 +130,7 @@ namespace Entity.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("personas");
+                    b.ToTable("Person");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.Role", b =>
@@ -172,7 +172,51 @@ namespace Entity.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("roles");
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("Entity.Model.Security.RoleView", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ViewId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("created_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("deleted_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("deleted_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("updated_by")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("ViewId");
+
+                    b.ToTable("RoleView");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.User", b =>
@@ -219,7 +263,51 @@ namespace Entity.Migrations
 
                     b.HasIndex("PersonId");
 
-                    b.ToTable("users");
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Entity.Model.Security.UserRole", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("created_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("deleted_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("deleted_by")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("updated_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("updated_by")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRole");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.View", b =>
@@ -229,6 +317,9 @@ namespace Entity.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ModuleId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
@@ -245,12 +336,6 @@ namespace Entity.Migrations
                     b.Property<string>("description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("idModule")
-                        .HasColumnType("int");
-
-                    b.Property<int>("moduleId")
-                        .HasColumnType("int");
 
                     b.Property<string>("name")
                         .IsRequired()
@@ -271,169 +356,86 @@ namespace Entity.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("moduleId");
+                    b.HasIndex("ModuleId");
 
-                    b.ToTable("views");
+                    b.ToTable("View");
                 });
 
-            modelBuilder.Entity("Entity.Model.Security.role_view", b =>
+            modelBuilder.Entity("Entity.Model.Security.RoleView", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("Entity.Model.Security.Role", "Role")
+                        .WithMany("RoleViews")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.HasOne("Entity.Model.Security.View", "View")
+                        .WithMany("RoleView")
+                        .HasForeignKey("ViewId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<int>("IdRole")
-                        .HasColumnType("int");
+                    b.Navigation("Role");
 
-                    b.Property<int>("IdView")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("created_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("deleted_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("deleted_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("roleId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("state")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("updated_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("viewId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("roleId");
-
-                    b.HasIndex("viewId");
-
-                    b.ToTable("role_Views");
-                });
-
-            modelBuilder.Entity("Entity.Model.Security.user_role", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("IdRole")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdUser")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("created_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("created_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("deleted_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("deleted_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("roleId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("state")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime>("updated_at")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("updated_by")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("roleId");
-
-                    b.HasIndex("userId");
-
-                    b.ToTable("user_Roles");
+                    b.Navigation("View");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.User", b =>
                 {
-                    b.HasOne("Entity.Model.Security.Person", "person")
+                    b.HasOne("Entity.Model.Security.Person", "Person")
                         .WithMany()
                         .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("person");
+                    b.Navigation("Person");
+                });
+
+            modelBuilder.Entity("Entity.Model.Security.UserRole", b =>
+                {
+                    b.HasOne("Entity.Model.Security.Role", "Role")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Security.User", "User")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.View", b =>
                 {
-                    b.HasOne("Entity.Model.Security.Modulo", "module")
+                    b.HasOne("Entity.Model.Security.Modulo", "Module")
                         .WithMany()
-                        .HasForeignKey("moduleId")
+                        .HasForeignKey("ModuleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("module");
+                    b.Navigation("Module");
                 });
 
-            modelBuilder.Entity("Entity.Model.Security.role_view", b =>
+            modelBuilder.Entity("Entity.Model.Security.Role", b =>
                 {
-                    b.HasOne("Entity.Model.Security.Role", "role")
-                        .WithMany()
-                        .HasForeignKey("roleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("RoleViews");
 
-                    b.HasOne("Entity.Model.Security.View", "view")
-                        .WithMany()
-                        .HasForeignKey("viewId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("role");
-
-                    b.Navigation("view");
+                    b.Navigation("UserRoles");
                 });
 
-            modelBuilder.Entity("Entity.Model.Security.user_role", b =>
+            modelBuilder.Entity("Entity.Model.Security.User", b =>
                 {
-                    b.HasOne("Entity.Model.Security.Role", "role")
-                        .WithMany()
-                        .HasForeignKey("roleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("UserRoles");
+                });
 
-                    b.HasOne("Entity.Model.Security.User", "user")
-                        .WithMany()
-                        .HasForeignKey("userId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("role");
-
-                    b.Navigation("user");
+            modelBuilder.Entity("Entity.Model.Security.View", b =>
+                {
+                    b.Navigation("RoleView");
                 });
 #pragma warning restore 612, 618
         }

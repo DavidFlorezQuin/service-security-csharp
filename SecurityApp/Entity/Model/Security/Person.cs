@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entity.Model.Security
+﻿namespace Entity.Model.Security
 {
-    public class Person
+    public class Person : ABaseModel
     {
-
-        public int Id { get; set; }
 
         public string first_name { get; set; }
 
@@ -28,19 +20,6 @@ namespace Entity.Model.Security
         public string phone { get; set; }
 
         public DateTime birthday { get; set; }
-
-        public DateTime created_at { get;set; }
-
-        public DateTime created_by { get; set; }
-
-        public DateTime updated_at { get; set;}
-
-        public DateTime updated_by{ get; set; }
-
-        public DateTime deleted_at { get; set; }
-        public DateTime deleted_by { get; set; }
-
-        public bool state { get; set; }
 
 
 

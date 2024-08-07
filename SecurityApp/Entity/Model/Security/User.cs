@@ -6,29 +6,16 @@ using System.Threading.Tasks;
 
 namespace Entity.Model.Security
 {
-    public class User
+    public class User : ABaseModel
     {
-        public int Id { get; set; }
-
         public string UserName { get; set; }
 
+        public int PersonId { get; set; }
         public string passsword { get; set;  }
 
-        public Person person { get; set; } = new Person();
-        public int PersonId { get; set; }
+        public Person Person { get; set; }
 
-        public DateTime created_at { get; set; }
-
-        public DateTime created_by { get; set; }
-
-        public DateTime updated_at { get; set; }
-
-        public DateTime updated_by { get; set; }
-
-        public DateTime deleted_at { get; set; }
-        public DateTime deleted_by { get; set; }
-
-        public bool state { get; set; }
+        public ICollection<UserRole> UserRoles { get; set; }
 
 
     }

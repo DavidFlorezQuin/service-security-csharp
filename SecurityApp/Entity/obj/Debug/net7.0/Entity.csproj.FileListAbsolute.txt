@@ -35,6 +35,7 @@ C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Enti
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.AssemblyInfoInputs.cache
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.AssemblyInfo.cs
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.sourcelink.json
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\refint\Entity.dll
 C:\Users\david\Source\Repos\SecurityApp\SecurityApp\Entity\obj\Debug\net7.0\Entity.pdb

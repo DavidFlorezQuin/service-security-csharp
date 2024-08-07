@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Entity.Model.Localitation;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -72,14 +73,20 @@ namespace Entity.Context
             ChangeTracker.DetectChanges();
         }
 
-        public DbSet<Role> roles => Set<Role>();
-        public DbSet<Person> personas => Set<Person>();
-        public DbSet<View> views => Set<View>();
-        public DbSet<user_role> user_Roles => Set<user_role>();
-        public DbSet<Modulo> modules => Set <Modulo>();
+        /*SECURITY*/
+        public DbSet<Role> Roles => Set<Role>();
+        public DbSet<Person> Person => Set<Person>();
+        public DbSet<View> View => Set<View>();
+        public DbSet<UserRole> UserRole => Set<UserRole>();
+        public DbSet<Modulo> Modulo => Set<Modulo>();
+        public DbSet<User> User => Set<User>();
+        public DbSet<RoleView> RoleView => Set<RoleView>();
 
-        public DbSet<User> users => Set<User>();
-        public DbSet<role_view> role_Views => Set<role_view>();
+        /*LOCALITATION*/
+        public DbSet<City> City => Set<City>();
+        public DbSet<Continent> Continent => Set<Continent>();
+        public DbSet<Country> Country => Set<Country>();
+
     }
 
     public readonly struct DapperEFCoreCommand : IDisposable
