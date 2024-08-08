@@ -9,8 +9,7 @@ namespace Entity.Model.Operational
     public class InventoryHistory : ABaseModel
     {
         public DateTime date { get; set; }
-        public string amount { get; set; }
-
+        public int amount { get; set; }
         public int InventoryId { get; set; }
         public Inventory Inventory { get; set; }
 

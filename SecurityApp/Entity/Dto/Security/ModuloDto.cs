@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Security
 {
-    public class ModuloDto
+    public class ModuloDto : BaseDto
     {
-
-        public int Id { get; set; }
 
         public string Name { get; set; }
 
         public string Description { get; set; }
+
+        public int Order { get; set; }
 
     }
 }

@@ -18,5 +18,7 @@ namespace Business.Localitation.Interface
         Task<CityDto> GetById(int id);
 
         Task Update(int id, CityDto entity);
+
+
     }
 }

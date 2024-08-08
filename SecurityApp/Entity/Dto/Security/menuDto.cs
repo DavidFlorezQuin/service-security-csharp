@@ -10,7 +10,6 @@ namespace Entity.Dto.Security
     {
         public UserDto User { get; set; }
         public List<RoleDto> Roles { get; set; }
-        public List<ModuloDto> Modules { get; set; }
         public List<ViewDto> Views { get; set; }
     }
 }

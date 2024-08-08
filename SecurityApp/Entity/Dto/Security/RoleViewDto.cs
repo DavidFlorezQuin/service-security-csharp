@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Security
 {
-    public class RoleViewDto
+    public class RoleViewDto : BaseDto
     {
-        public int Id { get; set; }
+        public int RoleId { get; set; }
+        public int ViewId { get; set; }
 
-        public int IdRole { get; set; }
-
-        public int IdView { get; set; }
-        public string NameRole { get; set; }
-        public string NameView { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace Data.Security.Implementation
 
         public async Task<UserRole> GetById(int id)
         {
-            var sql = @"SELECT * FROM user_role WHERE Id = @Id ORDER BY Id ASC";
+            var sql = @"SELECT * FROM userRole WHERE Id = @Id ORDER BY Id ASC";
             return await context.QueryFirstOrDefaultAsync<UserRole>(sql, new { Id = id });
         }
 

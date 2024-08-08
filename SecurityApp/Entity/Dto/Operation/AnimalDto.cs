@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Operation
 {
-    public class AnimalDto
+    public class AnimalDto : BaseDto
     {
-        public int id { get; set; }
         public string animal { get; set; }
         public string gender { get; set; }
         public double weight { get; set; }
@@ -17,5 +16,7 @@ namespace Entity.Dto.Operation
         public string purpose { get; set; }
         public DateTime birthDay { get; set; }
         public DateTime dateRegister { get; set; }
+        public int LotId { get; set; }
+
     }
 }

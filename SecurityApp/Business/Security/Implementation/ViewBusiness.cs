@@ -2,6 +2,7 @@
 using Data.Security.Interfaces;
 using Entity.Dto.Security;
 using Entity.Model.Security;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,7 @@ namespace Business.Security.Implementation
             view.name = entity.Name;
             view.route = entity.Route;
             view.description = entity.Description;
+            view.ModuloId = entity.ModuleId;
 
             return view;
         }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Security
 {
-    public class UserRoleDto
+    public class UserRoleDto : BaseDto
     {
-        public int Id { get; set; }
 
         public int RoleId { get; set; }
 

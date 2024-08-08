@@ -1,4 +1,5 @@
 ﻿using Business.Security.Interfaces;
+using Data.Security.Implementation;
 using Data.Security.Interfaces;
 using Entity.Dto.Security;
 using Entity.Model.Security;
@@ -13,11 +14,17 @@ namespace Business.Security.Implementation
     public class ModuleBusiness : IModuleBusiness
     {
 
+
         private readonly IModuleData data;
 
         public ModuleBusiness(IModuleData data)
         {
             this.data = data;
+        }
+
+        public async Task UpdateModuloOrder(int id1, int id2)
+        {
+            await data.UpdateModuloOrder(id1, id2);
         }
 
         public async Task Delete(int id)

@@ -31,8 +31,8 @@ namespace Business.Security.Implementation
             RoleViewDto roleViewDto = new RoleViewDto();
 
             roleViewDto.Id = roleView.Id;
-            roleViewDto.IdRole = roleView.RoleId;
-            roleViewDto.IdView = roleView.ViewId;
+            roleViewDto.RoleId = roleView.RoleId;
+            roleViewDto.ViewId = roleView.ViewId;
 
             return roleViewDto;
 
@@ -41,8 +41,8 @@ namespace Business.Security.Implementation
         private RoleView mapearDatos(RoleView roleView, RoleViewDto entity)
         {
             roleView.Id = entity.Id;
-            roleView.RoleId = entity.IdRole;
-            roleView.ViewId = entity.IdView;
+            roleView.RoleId = entity.RoleId;
+            roleView.ViewId = entity.ViewId;
 
             return roleView;
         }

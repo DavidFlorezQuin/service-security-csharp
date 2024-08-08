@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Security
 {
-    public class PersonDto
+    public class PersonDto : BaseDto
     {
-        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
@@ -18,7 +17,6 @@ namespace Entity.Dto.Security
         public string Direction { get; set; }
         public string Phone { get; set; }
         public DateTime Birthday { get; set; }
-        public bool State { get; set; }
 
     }
 }

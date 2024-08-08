@@ -11,5 +11,12 @@ namespace Entity.Model.Operational
         public DateTime date { get; set; }
         public string observation { get; set; }
 
+        public int FatherId { get; set; }
+        public Animal Father { get; set; }
+
+        public int MotherId { get; set; }
+        public Animal Mother { get; set; }
+
+
     }
 }

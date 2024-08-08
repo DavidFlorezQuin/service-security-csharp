@@ -51,7 +51,7 @@ namespace Data.Security.Implementation
             {
                 Id = user.Id,
                 UserName = user.UserName,
-                State = user.state,
+                state = user.state,
                 password = user.passsword,
                 PersonId = user.PersonId
             };
@@ -72,7 +72,7 @@ namespace Data.Security.Implementation
         {
             return await context.RoleView
                                 .Where(rv => rv.RoleId == roleId)
-                                .Select(rv => new ViewDto { Id = rv.View.Id, Name = rv.View.name })
+                                .Select(rv => new ViewDto { Id = rv.View.Id, Name = rv.View.name, Description = rv.View.description, Route = rv.View.route, ModuleId = rv.View.ModuloId})
                                 .ToListAsync();
         }
 

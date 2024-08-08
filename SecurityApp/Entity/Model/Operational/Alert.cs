@@ -13,5 +13,7 @@ namespace Entity.Model.Operational
         public string description { get; set; }
         public DateTime date { get; set; }
 
+        public int AnimalId { get; set; }
+        public Animal Animal { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace Business.Security.Interfaces
 {
     public interface IModuleBusiness
     {
+        Task UpdateModuloOrder(int id1, int id2);
+
         Task Delete(int id);
 
         Task<Modulo> Save(ModuloDto entity);

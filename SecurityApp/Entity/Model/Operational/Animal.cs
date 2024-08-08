@@ -17,5 +17,8 @@ namespace Entity.Model.Operational
         public DateTime birthDay { get; set; }
         public DateTime dateRegister { get; set; }
 
+        public int LotId { get; set; }
+        public Lot Lot { get; set; }
+
     }
 }

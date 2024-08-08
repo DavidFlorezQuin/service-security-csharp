@@ -56,7 +56,7 @@ namespace Business.Security.Implementation
             person.document = dto.Document;
             person.direction = dto.Direction;
             person.type_document = dto.TypeDocument;
-            person.state = dto.State;
+            person.state = dto.state;
 
 
             return person;

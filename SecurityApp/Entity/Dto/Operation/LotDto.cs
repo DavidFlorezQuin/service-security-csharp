@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Operation
 {
-    public class LotDto
+    public class LotDto : BaseDto
     {
         public string name { get; set; }
-        public string production_system { get; set; }
-        public int LottId { get; set; }
+        public string productionSystem { get; set; }
+        public int FarmId { get; set; }
 
     }
 }

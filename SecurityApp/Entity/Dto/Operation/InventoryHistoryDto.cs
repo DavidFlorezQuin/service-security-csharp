@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Operation
 {
-    public class InventoryHistoryDto
+    public class InventoryHistoryDto : BaseDto
     {
         public DateTime date { get; set; }
         public string amount { get; set; }

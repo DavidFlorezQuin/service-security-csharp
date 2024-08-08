@@ -12,8 +12,8 @@ namespace Entity.Model.Security
         public string name { get; set; }
         public string description { get; set; }
         public string route{ get; set; }
-        public int ModuleId { get; set; }
-        public Modulo Module { get; set; }
+        public int ModuloId { get; set; }
+        public Modulo Modulo { get; set; }
 
         public ICollection<RoleView> RoleView { get; set; }
 

@@ -1,6 +1,7 @@
 ﻿using Data.Localitation.Interface;
 using Entity.Context;
 using Entity.Model.Localitation;
+using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -35,9 +36,10 @@ namespace Data.Localitation.Implementation
             await context.SaveChangesAsync();
         }
 
-        public Task<Continent> GetById(int id)
+        public async Task<Continent> GetById(int id)
         {
-            throw new NotImplementedException();
+            var sql = @"SELECT * FROM Continent WHERE Id = @Id ORDER BY Id ASC";
+            return await context.QueryFirstOrDefaultAsync<Continent>(sql, new { Id = id });
         }
 
         public async Task<Continent> Save(Continent entity)

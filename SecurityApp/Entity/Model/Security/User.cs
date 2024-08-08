@@ -17,6 +17,5 @@ namespace Entity.Model.Security
 
         public ICollection<UserRole> UserRoles { get; set; }
 
-
     }
 }

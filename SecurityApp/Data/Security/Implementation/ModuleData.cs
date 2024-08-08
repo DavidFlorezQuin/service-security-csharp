@@ -20,6 +20,25 @@ namespace Data.Security.Implementation
             this.configuration = configuration;
         }
 
+        public async Task UpdateModuloOrder(int id1, int id2)
+        {
+            var modulo1 = await GetById(id1);
+            var modulo2 = await GetById(id2);
+
+            if (modulo1 == null || modulo2 == null)
+            {
+                throw new Exception("Uno o ambos módulos no fueron encontrados");
+            }
+
+            // Intercambiar los valores de la propiedad Order
+            int tempOrder = modulo1.Order;
+            modulo1.Order = modulo2.Order;
+            modulo2.Order = tempOrder;
+
+            context.Modulo.Update(modulo1);
+            context.Modulo.Update(modulo2);
+            await context.SaveChangesAsync();
+        }
 
         public async Task Delete(int id)
         {
@@ -36,7 +55,7 @@ namespace Data.Security.Implementation
 
         public async Task<Modulo> GetById(int id)
         {
-            var sql = @"SELECT * FROM Module WHERE Id = @Id ORDER BY Id ASC";
+            var sql = @"SELECT * FROM Modulo WHERE Id = @Id ORDER BY Id ASC";
             return await context.QueryFirstOrDefaultAsync<Modulo>(sql, new { Id = id });
         }
 

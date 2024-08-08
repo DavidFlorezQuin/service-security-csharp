@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Security
 {
-    public class ViewDto
+    public class ViewDto : BaseDto
     {
 
-        public int Id { get; set; }
 
         public string Name { get; set; }
 

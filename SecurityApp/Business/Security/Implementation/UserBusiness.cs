@@ -46,7 +46,7 @@ namespace Business.Security.Implementation
                 {
                     Id = user.Id,
                     UserName = user.UserName,
-                    State = user.State,
+                    state = user.state,
                     password = user.password,
                     PersonId = user.PersonId
                 },
@@ -89,7 +89,7 @@ namespace Business.Security.Implementation
             user.UserName = entity.UserName;
             user.passsword = entity.password;
             user.PersonId = entity.PersonId;
-            user.state = entity.State;
+            user.state = entity.state;
 
             return user;
         }

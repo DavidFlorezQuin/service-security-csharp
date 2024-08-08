@@ -10,7 +10,7 @@ namespace Entity.Model.Operational
     {
         public string name { get; set; }
         public string description { get; set; }
-        public int amount { get; set; }
+        public double amount { get; set; }
         public string input_type { get; set; }
         public DateTime date { get; set; }
 

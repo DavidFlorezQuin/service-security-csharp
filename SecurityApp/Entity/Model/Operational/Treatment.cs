@@ -11,6 +11,7 @@ namespace Entity.Model.Operational
     {
         public string medicines { get; set; }
         public string description { get; set; }
+        public DateTime date { get; set;}
 
         public int HealthHistoryId {get; set;}
         public HealthHistory HealthHistory { get; set; }

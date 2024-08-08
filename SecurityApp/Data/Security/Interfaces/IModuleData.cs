@@ -13,5 +13,6 @@ namespace Data.Security.Interfaces
         Task<Modulo> Save(Modulo entity);
         Task Update(Modulo entity);
         Task<Modulo> GetById(int id);
+        Task UpdateModuloOrder(int id1, int id2);
     }
 }

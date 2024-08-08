@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entity.Dto.Operation
 {
-    public class ProductionDto
+    public class ProductionDto : BaseDto
     {
-        public string type_production { get; set; }
+        public string typeProduction { get; set; }
         public double quantity { get; set; }
         public string measurement { get; set; }
         public string observation { get; set; }

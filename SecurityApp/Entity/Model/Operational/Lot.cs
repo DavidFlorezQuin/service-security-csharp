@@ -11,8 +11,8 @@ namespace Entity.Model.Operational
         public string name { get; set; }
         public string production_system { get; set; }
 
-        public int LottId { get; set; }
-        public Lot Lott { get; set; }
+        public int FarmId { get; set; }
+        public Farm Farm { get; set; }
 
 
     }

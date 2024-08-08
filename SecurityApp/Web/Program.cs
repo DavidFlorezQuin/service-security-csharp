@@ -1,5 +1,9 @@
+using Business.Localitation.Implementation;
+using Business.Localitation.Interface;
 using Business.Security.Implementation;
 using Business.Security.Interfaces;
+using Data.Localitation.Implementation;
+using Data.Localitation.Interface;
 using Data.Security.Implementation;
 using Data.Security.Interfaces;
 using Entity.Context;
@@ -49,6 +53,15 @@ builder.Services.AddScoped<IUserRoleData, UserRoleData>();
 
 builder.Services.AddScoped<IViewBusiness, ViewBusiness>();
 builder.Services.AddScoped<IViewData, ViewData>();
+
+builder.Services.AddScoped<IContinentBusiness, ContinentBusiness>();
+builder.Services.AddScoped<IContinentData, ContinentData>();
+
+builder.Services.AddScoped<ICountryBusiness, CountryBusiness>();
+builder.Services.AddScoped<ICountryData, CountryData>();
+
+builder.Services.AddScoped<ICityBusiness, CityBusiness>();
+builder.Services.AddScoped<ICityData, CityData>();
 
 var app = builder.Build();
 
