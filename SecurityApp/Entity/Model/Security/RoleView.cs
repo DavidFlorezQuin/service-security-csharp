@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,6 @@ namespace Entity.Model.Security
 
         public int RoleId { get; set; }
         public Role Role { get; set; }
-
         public int ViewId { get; set; }
         public View View { get; set; } 
 

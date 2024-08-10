@@ -11,11 +11,13 @@ namespace Business.Security.Interfaces
     public interface IRoleViewBusiness
     {
         Task Delete(int id);
-        Task<RoleView> Save(RoleViewDto entity);
+        Task<RoleView> Save(RoleViewDto dto);
 
         Task<RoleViewDto> GetById(int id);
 
-        Task Update(int id, RoleViewDto entity);
+        Task Update(int id, RoleViewDto dto);
+
+        Task <IEnumerable<RoleViewDto>> GetAll();
 
     }
 }

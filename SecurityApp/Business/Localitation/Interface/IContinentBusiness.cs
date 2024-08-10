@@ -13,9 +13,11 @@ namespace Business.Localitation.Interface
     {
         Task Delete(int id);
 
-        Task<Continent> Save(ContinentDto entity);
+        Task<Continent> Save(ContinentDto dto);
         Task<ContinentDto> GetById(int id);
 
-        Task Update(int id, ContinentDto entity);
+        Task Update(int id, ContinentDto dto);
+
+        Task<IEnumerable<ContinentDto>> GetAll();
     }
 }

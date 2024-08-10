@@ -9,5 +9,6 @@ namespace Web.Controllers.Localitation.Interface
         Task<ActionResult<ContinentDto>> Save([FromBody] ContinentDto entity);
         Task<IActionResult> Update(int id, [FromBody] ContinentDto entity);
         Task<IActionResult> Delete(int id);
+        Task<ActionResult<IEnumerable<ContinentDto>>> GetAll();  
     }
 }

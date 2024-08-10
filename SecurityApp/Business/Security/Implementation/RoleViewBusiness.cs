@@ -5,6 +5,7 @@ using Entity.Model.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,37 +27,38 @@ namespace Business.Security.Implementation
 
         public async Task<RoleViewDto> GetById(int id)
         {
-            RoleView roleView = await data.GetById(id);
+            var roleView = await data.GetById(id);
 
-            RoleViewDto roleViewDto = new RoleViewDto();
+            return new RoleViewDto
+            {
 
-            roleViewDto.Id = roleView.Id;
-            roleViewDto.RoleId = roleView.RoleId;
-            roleViewDto.ViewId = roleView.ViewId;
+                Id = roleView.Id,
+                RoleId = roleView.RoleId,
+                ViewId = roleView.ViewId
 
-            return roleViewDto;
+            };
 
         }
 
-        private RoleView mapearDatos(RoleView roleView, RoleViewDto entity)
+        private RoleView mapearDatos(RoleView roleView, RoleViewDto dto)
         {
-            roleView.Id = entity.Id;
-            roleView.RoleId = entity.RoleId;
-            roleView.ViewId = entity.ViewId;
+            roleView.Id = dto.Id;
+            roleView.RoleId = dto.RoleId;
+            roleView.ViewId = dto .ViewId;
 
             return roleView;
         }
 
-        public async Task<RoleView> Save(RoleViewDto entity)
+        public async Task<RoleView> Save(RoleViewDto dto)
         {
             RoleView roleView = new RoleView();
 
-            roleView = mapearDatos(roleView, entity); ;
+            roleView = mapearDatos(roleView, dto); 
 
             return await data.Save(roleView);
         }
 
-        public async Task Update(int id, RoleViewDto entity)
+        public async Task Update(int id, RoleViewDto dto)
         {
             RoleView roleView = await data.GetById(id);
 
@@ -66,9 +68,30 @@ namespace Business.Security.Implementation
 
             }
 
-            roleView = mapearDatos(roleView, entity);
+            roleView = mapearDatos(roleView, dto );
 
             await data.Update(roleView);
         }
+
+        public async Task<IEnumerable<RoleViewDto>> GetAll()
+        {
+            var roleViews = await data.GetAll();
+            var roleViewDtos = new List<RoleViewDto>();
+
+            foreach (var rv in roleViews)
+            {
+                var roleViewDto = new RoleViewDto
+                {
+
+                    Id = rv.Id,
+                    RoleId = rv.RoleId,
+                    ViewId = rv.ViewId,
+                };
+
+            roleViewDtos.Add(roleViewDto);
+            }
+            return roleViewDtos; 
+        }
+        
     }
 }

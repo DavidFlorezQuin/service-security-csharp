@@ -10,8 +10,8 @@ namespace Entity.Model.Dto.Localitation
     public class ContinentDto : BaseDto
     {
 
-        public String Name { get; set; }
+        public string Name { get; set; }
 
-        public String Description { get; set; }
+        public string Description { get; set; }
     }
 }

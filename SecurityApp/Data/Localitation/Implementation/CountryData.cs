@@ -37,9 +37,10 @@ namespace Data.Localitation.Implementation
             await context.SaveChangesAsync();
         }
 
-        public Task<Country> GetById(int id)
+        public async Task<Country> GetById(int id)
         {
-            throw new NotImplementedException();
+            var sql = @"SELECT * FROM Country WHERE Id = @Id ORDER BY Id ASC";
+            return await context.QueryFirstOrDefaultAsync<Country>(sql, new { Id = id });
         }
 
         public async Task<Country> Save(Country entity)

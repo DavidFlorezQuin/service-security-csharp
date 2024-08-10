@@ -1,12 +1,330 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\data\\localitation\\interface\\icontinentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\localitation\\interface\\icontinentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\data\\localitation\\interface\\icitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\localitation\\interface\\icitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\business\\localitation\\interface\\icontinentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\localitation\\interface\\icontinentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\business\\localitation\\interface\\icitybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\localitation\\interface\\icitybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\business\\localitation\\implementation\\continentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\localitation\\implementation\\continentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\business\\localitation\\implementation\\citybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\localitation\\implementation\\citybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\localitation\\implementation\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\localitation\\implementation\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\data\\localitation\\implementation\\citydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\localitation\\implementation\\citydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\data\\localitation\\implementation\\countrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\localitation\\implementation\\countrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\data\\localitation\\implementation\\continentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\localitation\\implementation\\continentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\localitation\\implementation\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\localitation\\implementation\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\business\\localitation\\implementation\\countrybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\localitation\\implementation\\countrybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\localitation\\implementation\\continentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\localitation\\implementation\\continentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\security\\implementation\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\security\\implementation\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\security\\implementation\\modulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\security\\implementation\\modulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\web\\controllers\\security\\interface\\imodulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{518A3F36-37F3-417F-A789-BF7BCB67BD41}|Web\\Web.csproj|solutionrelative:web\\controllers\\security\\interface\\imodulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|c:\\users\\david\\source\\repos\\securityapp\\securityapp\\entity\\model\\localitation\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|solutionrelative:entity\\model\\localitation\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICityData.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Interface\\ICityData.cs",
+              "RelativeDocumentMoniker": "Data\\Localitation\\Interface\\ICityData.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Interface\\ICityData.cs",
+              "RelativeToolTip": "Data\\Localitation\\Interface\\ICityData.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAIAwwA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:22:58.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IContinentData.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Interface\\IContinentData.cs",
+              "RelativeDocumentMoniker": "Data\\Localitation\\Interface\\IContinentData.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Interface\\IContinentData.cs",
+              "RelativeToolTip": "Data\\Localitation\\Interface\\IContinentData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:23:26.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IContinentBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Interface\\IContinentBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Localitation\\Interface\\IContinentBusiness.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Interface\\IContinentBusiness.cs",
+              "RelativeToolTip": "Business\\Localitation\\Interface\\IContinentBusiness.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:23:17.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICityBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Interface\\ICityBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Localitation\\Interface\\ICityBusiness.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Interface\\ICityBusiness.cs",
+              "RelativeToolTip": "Business\\Localitation\\Interface\\ICityBusiness.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:23:13.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CityData.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\CityData.cs",
+              "RelativeDocumentMoniker": "Data\\Localitation\\Implementation\\CityData.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\CityData.cs",
+              "RelativeToolTip": "Data\\Localitation\\Implementation\\CityData.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:19:27.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContinentData.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\ContinentData.cs",
+              "RelativeDocumentMoniker": "Data\\Localitation\\Implementation\\ContinentData.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\ContinentData.cs",
+              "RelativeToolTip": "Data\\Localitation\\Implementation\\ContinentData.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:52:35.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\CountryController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Localitation\\Implementation\\CountryController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\CountryController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Localitation\\Implementation\\CountryController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:51:47.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CountryBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\CountryBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Localitation\\Implementation\\CountryBusiness.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\CountryBusiness.cs",
+              "RelativeToolTip": "Business\\Localitation\\Implementation\\CountryBusiness.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:51:34.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContinentBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\ContinentBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Localitation\\Implementation\\ContinentBusiness.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\ContinentBusiness.cs",
+              "RelativeToolTip": "Business\\Localitation\\Implementation\\ContinentBusiness.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:51:33.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CityBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\CityBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Localitation\\Implementation\\CityBusiness.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Business\\Localitation\\Implementation\\CityBusiness.cs",
+              "RelativeToolTip": "Business\\Localitation\\Implementation\\CityBusiness.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAMwEcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:51:05.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\CityController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Localitation\\Implementation\\CityController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\CityController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Localitation\\Implementation\\CityController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAhwBgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:50:30.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContinentController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\ContinentController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Localitation\\Implementation\\ContinentController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Localitation\\Implementation\\ContinentController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Localitation\\Implementation\\ContinentController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:27:46.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Implementation\\PersonController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Security\\Implementation\\PersonController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Implementation\\PersonController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Security\\Implementation\\PersonController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:21:44.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ModuloController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Implementation\\ModuloController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Security\\Implementation\\ModuloController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Implementation\\ModuloController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Security\\Implementation\\ModuloController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAxwBMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:27:22.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IModuleController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Interface\\IModuleController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Security\\Interface\\IModuleController.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Web\\Controllers\\Security\\Interface\\IModuleController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Security\\Interface\\IModuleController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:27:21.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Entity\\Model\\Localitation\\City.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Localitation\\City.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Entity\\Model\\Localitation\\City.cs",
+              "RelativeToolTip": "Entity\\Model\\Localitation\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:26:20.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "d9ba80f7-9692-42cc-a171-594d07abffc4",
+        "Display": 1,
+        "X": 0,
+        "Y": 91,
+        "Width": 800,
+        "Height": 600,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CountryData.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\CountryData.cs",
+              "RelativeDocumentMoniker": "Data\\Localitation\\Implementation\\CountryData.cs",
+              "ToolTip": "C:\\Users\\david\\Source\\Repos\\SecurityApp\\SecurityApp\\Data\\Localitation\\Implementation\\CountryData.cs",
+              "RelativeToolTip": "Data\\Localitation\\Implementation\\CountryData.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T21:52:19.684Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

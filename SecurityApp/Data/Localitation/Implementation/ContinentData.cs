@@ -55,6 +55,9 @@ namespace Data.Localitation.Implementation
             await context.SaveChangesAsync();
         }
 
-        
+        public async Task<IEnumerable<Continent>> GetAll()
+        {
+            return await context.Continent.Where(c => c.state == true).ToListAsync();
+        }
     }
 }

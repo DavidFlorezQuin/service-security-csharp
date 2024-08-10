@@ -15,5 +15,7 @@ namespace Data.Security.Interfaces
 
         Task<RoleView> GetById(int id);
 
+        Task <IEnumerable<RoleView>> GetAll();
+
     }
 }

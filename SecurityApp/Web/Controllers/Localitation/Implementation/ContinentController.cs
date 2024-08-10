@@ -15,6 +15,19 @@ namespace Web.Controllers.Localitation.Implementation
         {
             _continentBusiness = continentBusiness;
         }
+        [HttpGet("List")]
+        public async Task<ActionResult<IEnumerable<ContinentDto>>> GetAll()
+        {
+            var result = await _continentBusiness.GetAll();
+
+            if(result == null)
+            {
+                NotFound(); 
+            }
+
+            return Ok(result);
+
+        }
 
 
         [HttpGet("{id}")]

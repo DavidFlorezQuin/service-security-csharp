@@ -29,25 +29,36 @@ namespace Web.Controllers.Implements.Security
             return Ok(result);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<RoleViewDto>> Save([FromBody] RoleViewDto entity)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<RoleViewDto>>> GetAll()
         {
-            if (entity == null)
+            var result = await _roleViewBusiness.GetAll();
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<RoleViewDto>> Save([FromBody] RoleViewDto dto)
+        {
+            if (dto == null)
             {
                 return BadRequest("Entity is null");
             }
-            var result = await _roleViewBusiness.Save(entity);
+            var result = await _roleViewBusiness.Save(dto);
             return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] RoleViewDto entity)
+        public async Task<IActionResult> Update(int id, [FromBody] RoleViewDto dto)
         {
-            if (entity == null || id != entity.Id)
+            if (dto == null || id != dto.Id)
             {
                 return BadRequest();
             }
-            await _roleViewBusiness.Update(id, entity);
+            await _roleViewBusiness.Update(id, dto);
             return NoContent();
         }
 

@@ -59,8 +59,6 @@ namespace Data.Security.Implementation
             return await context.QueryFirstOrDefaultAsync<Modulo>(sql, new { Id = id });
         }
 
-
-
         public async Task<Modulo> Save(Modulo entity)
         {
             context.Modulo.Add(entity);

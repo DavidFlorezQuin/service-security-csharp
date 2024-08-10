@@ -1,5 +1,6 @@
 ﻿using Data.Security.Interfaces;
 using Entity.Context;
+using Entity.Dto.Security;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -46,8 +47,13 @@ namespace Data.Security.Implementation
 
         public async Task<RoleView> GetById(int id)
         {
-            var sql = @"SELECT * FROM role_view WHERE Id = @Id ORDER BY Id ASC";
+            var sql = @"SELECT * FROM RoleView WHERE Id = @Id ORDER BY Id ASC";
             return await context.QueryFirstOrDefaultAsync<RoleView>(sql, new { Id = id });
+        }
+
+        public async Task<IEnumerable<RoleView>> GetAll()
+        {
+            return await context.RoleView.Where(rv => rv.state == true).ToListAsync();
         }
     }
 }

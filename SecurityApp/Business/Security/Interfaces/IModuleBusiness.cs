@@ -14,9 +14,9 @@ namespace Business.Security.Interfaces
 
         Task Delete(int id);
 
-        Task<Modulo> Save(ModuloDto entity);
+        Task<Modulo> Save(ModuloDto dto);
 
-        Task Update(int id, ModuloDto entity);
+        Task Update(int id, ModuloDto dto);
 
         Task<ModuloDto> GetById(int id);
     }

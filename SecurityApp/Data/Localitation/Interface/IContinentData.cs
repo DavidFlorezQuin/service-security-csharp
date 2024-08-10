@@ -1,4 +1,5 @@
-﻿using Entity.Model.Localitation;
+﻿using Entity.Model.Dto.Localitation;
+using Entity.Model.Localitation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,7 @@ namespace Data.Localitation.Interface
         Task<Continent> Save(Continent entity);
         Task Update(Continent entity);
         Task<Continent> GetById(int id);
+        Task<IEnumerable<Continent>> GetAll();
+
     }
 }

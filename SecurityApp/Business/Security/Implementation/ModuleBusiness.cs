@@ -45,11 +45,11 @@ namespace Business.Security.Implementation
             return moduloDto;
         }
 
-        private Modulo mapearDatos(Modulo module, ModuloDto entity)
+        private Modulo mapearDatos(Modulo module, ModuloDto dto)
         {
-            module.Id = entity.Id;
-            module.Name = entity.Name;
-            module.Description = entity.Description;
+            module.Id = dto.Id;
+            module.Name = dto.Name;
+            module.Description = dto.Description;
 
             return module;
         }
@@ -64,7 +64,7 @@ namespace Business.Security.Implementation
             return await data.Save(modulo);
         }
 
-        public async Task Update(int id, ModuloDto entity)
+        public async Task Update(int id, ModuloDto dto)
         {
             Modulo module = await data.GetById(id);
 
@@ -73,7 +73,7 @@ namespace Business.Security.Implementation
                 throw new Exception("Registro no encontrado");
             }
 
-            module = mapearDatos(module, entity);
+            module = mapearDatos(module, dto);
             await data.Update(module);
         }
     }

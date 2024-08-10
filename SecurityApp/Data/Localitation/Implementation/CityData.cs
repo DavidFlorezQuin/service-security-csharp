@@ -36,9 +36,10 @@ namespace Data.Localitation.Implementation
 
         }
 
-        public Task<City> GetById(int id)
+        public async Task<City> GetById(int id)
         {
-            throw new NotImplementedException();
+            var sql = @"SELECT * FROM City WHERE Id = @Id ORDER BY Id ASC";
+            return await context.QueryFirstOrDefaultAsync<City>(sql, new { Id = id });
         }
 
         public async Task<City> Save(City entity)

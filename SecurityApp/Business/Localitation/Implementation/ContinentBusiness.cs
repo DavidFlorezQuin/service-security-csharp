@@ -19,63 +19,78 @@ namespace Business.Localitation.Implementation
 
         public ContinentBusiness(IContinentData data)
         {
-            this.data = data; 
+            this.data = data;
         }
 
         public async Task Delete(int id)
         {
-            await data.Delete(id); 
+            await data.Delete(id);
         }
 
         public async Task<ContinentDto> GetById(int id)
         {
-           
+
             Continent continent = await data.GetById(id);
 
             ContinentDto continentDto = new ContinentDto();
 
             continentDto.Id = continent.Id;
-            continentDto.Name = continent.Name; 
+            continentDto.Name = continent.Name;
             continentDto.Description = continent.Description;
 
-            return continentDto; 
+            return continentDto;
         }
 
-        private Continent mapearDatos(Continent continent, ContinentDto entity)
+        private Continent mapearDatos(Continent continent, ContinentDto dto)
         {
-            continent.Id = entity.Id; 
-            continent.Name = entity.Name;
-            continent.Description = entity.Description;
+            continent.Id = dto.Id;
+            continent.Name = dto.Name;
+            continent.Description = dto.Description;
 
-            return continent; 
+            return continent;
         }
 
-        public async Task<Continent> Save(ContinentDto entity)
+        public async Task<Continent> Save(ContinentDto dto)
         {
             Continent continent = new Continent();
 
-            continent = mapearDatos(continent, entity);
+            continent = mapearDatos(continent, dto);
 
-            return await data.Save(continent); 
-
-
-
+            return await data.Save(continent);
         }
 
-        public async Task Update(int id, ContinentDto entity)
+        public async Task Update(int id, ContinentDto dto)
         {
-            Continent continent = await data.GetById(id); 
+            Continent continent = await data.GetById(id);
 
-            if(continent == null)
+            if (continent == null)
             {
                 throw new Exception("No existe");
             }
 
-            continent = mapearDatos(continent, entity); 
+            continent = mapearDatos(continent, dto);
 
             await data.Update(continent);
         }
 
+        public async Task<IEnumerable<ContinentDto>> GetAll()
+        {
+            var continents = await data.GetAll();
+            var continentDtos = new List<ContinentDto>();
 
+            foreach (var continent in continents)
+            {
+
+                var continentDto = new ContinentDto()
+                {
+                    Id = continent.Id,
+                    Name = continent.Name,
+                    Description = continent.Description,
+                };
+
+                continentDtos.Add(continentDto);
+            }
+            return continentDtos;
+        }
     }
 }

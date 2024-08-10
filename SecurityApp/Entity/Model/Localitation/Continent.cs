@@ -8,9 +8,9 @@ namespace Entity.Model.Localitation
 {
     public class Continent : ABaseModel
     {
-        public String Name { get; set; }
+        public string Name { get; set; }
 
-        public String Description { get; set; }
+        public string Description { get; set; }
 
     }
 }
